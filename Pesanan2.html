@@ -1,0 +1,55 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css2/style.css">
+    <title>Checkout - Pembayaran</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Checkout</h1>
+        <div class="order-summary">
+            <h2>Rincian Pesanan</h2>
+            <div class="product">
+                <img src="c:\Users\ASUS\Music\konser\img2\2.png" alt="Produk 3" width="450px" height="200px">
+                <div class="Tiket VIP">
+                    <h3>Tiket VIP</h3>
+                    <p>Harga: Rp 250.000</p>
+                    <p>Jumlah: <span class="quantity">1</span></p>
+                </div>
+            </div>
+            <div class="total">
+                <h3>Total: Rp 250.000</h3>
+            </div>
+        </div>
+
+        <div class="shipping-info">
+            <h2>Informasi Pengiriman</h2>
+            <form id="shipping-form">
+                <label for="name">Nama:</label>
+                <input type="text" id="name" required>
+                
+                <label for="address">Alamat:</label>
+                <textarea id="address" required></textarea>
+                
+                <label for="phone">Nomor Telepon:</label>
+                <input type="tel" id="phone" required>
+                
+                <h2>Metode Pembayaran</h2>
+                <select id="payment-method" required>
+                    <option value="">Pilih Metode Pembayaran</option>
+                    <option value="transfer">Transfer Bank</option>
+                    <option value="cod">Cash on Delivery</option>
+                </select>
+                
+                <button type="submit" class="checkout-btn"></button>
+                <a href="Pembayaran berhasil2.html" class="btn">Bayar Sekarang</a>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
